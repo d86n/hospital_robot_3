@@ -4,4 +4,5 @@ sudo apt-get update
 sudo apt-get install ros-noetic-navigation
 sudo apt-get install ros-noetic-gmapping
 sudo apt-get install ros-noetic-openslam-gmapping
+sudo apt-get install ros-noetic-teleop-twist-keyboard
 ```
