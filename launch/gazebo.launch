@@ -9,13 +9,11 @@
     <arg name="use_sim_time" value="true"/>
     <arg name="gui" value="true"/>
   </include>
-
-  <!--
   
   <param name="robot_description" textfile="$(find hospital_robot)/urdf/robot.urdf"/>
 
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -model hospital_robot -param robot_description -x 0.25 -y 11.34 -z 0 "/>
+        args="-urdf -model hospital_robot -param robot_description -x 48 -y 0 -z 0 -Y -1.570796 "/>
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
@@ -27,7 +25,5 @@
     
     <param name="use_sim_time" value="true"/>
   </node>
-
-  -->
   
 </launch>
