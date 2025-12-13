@@ -2531,7 +2531,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>2.15291 -11.8015 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_0'>
+    <model name='door_2'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2626,7 +2626,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-5.03176 -11.7302 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_1'>
+    <model name='door_3'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2721,7 +2721,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-13.1224 -11.8117 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_2'>
+    <model name='door_4'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2816,7 +2816,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-28.4221 -11.8052 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_3'>
+    <model name='door_5'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -2911,7 +2911,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-37.2361 -11.7332 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_4'>
+    <model name='door_6'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3006,7 +3006,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-45.6217 -11.7063 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_5'>
+    <model name='door_7'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3101,7 +3101,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-55.4771 -11.7413 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_6'>
+    <model name='door_8'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3196,7 +3196,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-65.928 -11.7769 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_7'>
+    <model name='door_9'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3291,7 +3291,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-73.8535 -11.5702 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_8'>
+    <model name='door_10'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3386,7 +3386,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-83.173 -11.7442 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_10'>
+    <model name='door_11'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3481,7 +3481,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-92.0659 -11.6612 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_14'>
+    <model name='door_12'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3576,7 +3576,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-20.8287 -47.2443 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_18'>
+    <model name='door_13'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3671,7 +3671,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-10.3715 4.98974 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_19'>
+    <model name='door_14'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3766,7 +3766,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-33.3869 4.79171 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_20'>
+    <model name='door_15'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3861,7 +3861,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-51.428 4.8373 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_21'>
+    <model name='door_16'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -3956,7 +3956,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-51.2978 -4.98786 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_22'>
+    <model name='door_17'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4051,7 +4051,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-35.4144 -4.82093 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_23'>
+    <model name='door_18'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4146,7 +4146,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-69.0279 5.05917 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_24'>
+    <model name='door_19'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4241,7 +4241,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-79.349 5.11382 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_25'>
+    <model name='door_20'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4336,7 +4336,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-90.8338 5.02007 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_26'>
+    <model name='door_21'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4431,7 +4431,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-90.222 -4.68206 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_27'>
+    <model name='door_22'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4526,7 +4526,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-80.0268 -4.7705 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_28'>
+    <model name='door_23'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4621,7 +4621,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-68.1587 -4.8242 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_9'>
+    <model name='door_24'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4716,7 +4716,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-99.241 -47.2266 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_29'>
+    <model name='door_25'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4811,7 +4811,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-99.7632 47.4257 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_40'>
+    <model name='door_26'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -4906,7 +4906,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-102.718 -39.5214 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_49'>
+    <model name='door_27'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5001,7 +5001,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-93.0525 11.8123 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_50'>
+    <model name='door_28'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5096,7 +5096,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-82.6731 11.4586 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_51'>
+    <model name='door_29'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5191,7 +5191,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-71.2973 11.5181 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_55'>
+    <model name='door_30'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5286,7 +5286,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-63.5202 40.7656 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_56'>
+    <model name='door_31'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5381,7 +5381,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-60.3251 47.6352 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_61'>
+    <model name='door_32'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5476,7 +5476,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-50.4551 11.7888 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_62'>
+    <model name='door_33'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5571,7 +5571,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-42.0023 11.7214 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_63'>
+    <model name='door_34'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5666,7 +5666,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-31.2953 11.8932 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_67'>
+    <model name='door_35'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5761,7 +5761,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-60.1114 -47.4 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_71'>
+    <model name='door_36'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5856,7 +5856,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-7.15592 11.8102 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_72'>
+    <model name='door_37'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -5951,7 +5951,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>2.60421 11.3731 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_76'>
+    <model name='door_38'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
@@ -6046,7 +6046,7 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose>-20.4941 47.3986 1.15058 0 2e-06 -3e-06</pose>
     </model>
-    <model name='door_clone_55_clone'>
+    <model name='door_39'>
       <link name='link'>
         <inertial>
           <mass>1</mass>
