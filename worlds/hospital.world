@@ -1,23 +1,5 @@
 <sdf version='1.7'>
   <world name='default'>
-    <light name='sun' type='directional'>
-      <cast_shadows>1</cast_shadows>
-      <pose>0 0 10 0 -0 0</pose>
-      <diffuse>0.8 0.8 0.8 1</diffuse>
-      <specular>0.2 0.2 0.2 1</specular>
-      <attenuation>
-        <range>1000</range>
-        <constant>0.9</constant>
-        <linear>0.01</linear>
-        <quadratic>0.001</quadratic>
-      </attenuation>
-      <direction>-0.5 0.1 -0.9</direction>
-      <spot>
-        <inner_angle>0</inner_angle>
-        <outer_angle>0</outer_angle>
-        <falloff>0</falloff>
-      </spot>
-    </light>
     <model name='ground_plane'>
       <static>1</static>
       <link name='link'>
@@ -25,7 +7,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>300 100</size>
             </plane>
           </geometry>
           <surface>
@@ -51,14 +33,17 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>100 100</size>
+              <size>300 100</size>
             </plane>
           </geometry>
           <material>
             <script>
               <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
+              <name>Gazebo/White</name>
             </script>
+            <ambient>1 1 1 1</ambient>
+            <diffuse>1 1 1 1</diffuse>
+            <emissive>1 1 1 1</emissive>
           </material>
         </visual>
         <self_collide>0</self_collide>
@@ -75,9 +60,10 @@
       <real_time_update_rate>1000</real_time_update_rate>
     </physics>
     <scene>
-      <ambient>0.4 0.4 0.4 1</ambient>
+      <ambient>0.6 0.6 0.6 1</ambient>
       <background>0.7 0.7 0.7 1</background>
-      <shadows>1</shadows>
+      <shadows>0</shadows>
+      <grid>0</grid>
     </scene>
     <wind/>
     <spherical_coordinates>
@@ -88,6 +74,7 @@
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
     <model name='hospital_wall'>
+      <static>true</static>
       <pose>-47.217 0.872574 0 0 -0 0</pose>
       <link name='Wall_136'>
         <collision name='Wall_136_Collision'>
@@ -1712,10 +1699,10 @@
       <static>1</static>
     </model>
     <state world_name='default'>
-      <sim_time>195 576000000</sim_time>
-      <real_time>196 226661365</real_time>
-      <wall_time>1765599810 16168043</wall_time>
-      <iterations>195576</iterations>
+      <sim_time>267 546000000</sim_time>
+      <real_time>72 115632001</real_time>
+      <wall_time>1765602085 749683511</wall_time>
+      <iterations>71970</iterations>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -1946,13 +1933,10 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <light name='sun'>
-        <pose>0 0 10 0 -0 0</pose>
-      </light>
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>18.1767 -106.003 174.326 -0 1.02328 2.00363</pose>
+        <pose>39.9513 -29.5002 58.3645 0 0.663279 2.58362</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
