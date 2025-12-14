@@ -1,0 +1,27 @@
+# Cấu hình hình dáng robot
+# Dựa trên wheelSeparation = 0.46m trong URDF, robot rộng khoảng 0.5m
+robot_radius: 0.3  # Bán kính an toàn (hoặc dùng footprint nếu muốn hình chữ nhật)
+
+map_type: costmap
+
+# Cấu hình chướng ngại vật
+obstacle_layer:
+  enabled: true
+  obstacle_range: 2.5
+  raytrace_range: 3.0
+  inflation_radius: 0.55  # Lớn hơn robot_radius một chút để tránh đi sát tường
+  track_unknown_space: true
+  observation_sources: laser_scan_sensor
+  laser_scan_sensor: {
+    sensor_frame: lidar_link,       # Khớp với link trong URDF
+    data_type: LaserScan,
+    topic: /scan,                   # Khớp với topic trong plugin laser
+    marking: true,
+    clearing: true
+  }
+
+# Cấu hình vùng an toàn (Inflation)
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 5.0  # Chỉ số càng lớn thì cost giảm càng nhanh khi xa vật cản
+  inflation_radius: 0.55
