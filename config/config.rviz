@@ -48,7 +48,7 @@ Visualization Manager:
         Y: 0
         Z: 0
       Plane: XY
-      Plane Cell Count: 100
+      Plane Cell Count: 30
       Reference Frame: <Fixed Frame>
       Value: true
     - Alpha: 1
@@ -126,7 +126,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.029999999329447746
       Style: Flat Squares
       Topic: /scan
       Unreliable: false
@@ -160,7 +160,7 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: -0.019999872893095016
+      Angle: 0.0050003500655293465
       Class: rviz/TopDownOrtho
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
@@ -170,10 +170,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 49.45101547241211
+      Scale: 31.422176361083984
       Target Frame: <Fixed Frame>
-      X: 50.76988983154297
-      Y: -0.5054086446762085
+      X: 1.2277618646621704
+      Y: 0.05133848637342453
     Saved: ~
 Window Geometry:
   Displays:
