@@ -9,16 +9,11 @@
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
     <remap from="scan" to="/scan"/>
     <param name="odom_frame_id" value="odom"/>
-    <param name="base_frame_id" value="base_footprint"/> 
+    <param name="base_frame_id" value="base_footprint"/>
     <param name="global_frame_id" value="map"/>
 
     <param name="odom_model_type" value="diff-corrected"/>
-    
-    <param name="odom_alpha1" value="0.005"/> 
-    <param name="odom_alpha2" value="0.005"/> 
-    <param name="odom_alpha3" value="0.010"/> 
-    <param name="odom_alpha4" value="0.005"/> 
-    <param name="update_min_d" value="0.1"/> 
+    <param name="odom_alpha1" value="0.1"/> <param name="odom_alpha2" value="0.1"/> <param name="odom_alpha3" value="0.1"/> <param name="odom_alpha4" value="0.1"/> <param name="update_min_d" value="0.1"/> 
     <param name="update_min_a" value="0.1"/> 
     <param name="resample_interval" value="1"/>
     
@@ -36,11 +31,15 @@
     <param name="initial_pose_y" value="0.0"/>
     <param name="initial_pose_a" value="-1.570796"/>
     
-    <param name="recovery_alpha_slow" value="0.0"/>
-    <param name="recovery_alpha_fast" value="0.0"/>
+    <param name="recovery_alpha_slow" value="0.001"/>
+    <param name="recovery_alpha_fast" value="0.1"/>
   </node>
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <param name="controller_frequency" value="10.0" />
+    <param name="planner_patience" value="5.0" />
+    <param name="controller_patience" value="15.0" />
+
     <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
     
     <rosparam file="$(find hospital_robot)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
