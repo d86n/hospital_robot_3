@@ -13,7 +13,7 @@
   <param name="robot_description" textfile="$(find hospital_robot)/urdf/robot.urdf"/>
 
   <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
-        args="-urdf -model hospital_robot -param robot_description -x 10 -y 0 -z 0 -Y -1.570796 "/>
+        args="-urdf -model hospital_robot -param robot_description -x 10 -y 0 -z 0 "/>
 
   <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
 
