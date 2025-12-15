@@ -13,7 +13,7 @@ DWAPlannerROS:
   min_vel_theta: 0.1  # Giam min xoay xuong 0.1 de robot co the xoay cham rai khi tinh chinh
 
   acc_lim_x: 1.5
-  acc_lim_theta: 1.0  # Giam gia toc xoay de tranh vot lo da (overshoot)
+  acc_lim_theta: 1.0  # Giam gia toc xoay de tranh vot lo
   acc_lim_y: 0.0
 
 # 2. Goal Tolerance
@@ -32,7 +32,7 @@ DWAPlannerROS:
   goal_distance_bias: 24.0 
   occdist_scale: 0.01       # <--- Giảm từ 0.05 xuống 0.01 để robot dám đi sát tường hơn
   
-  forward_point_distance: 0.1 # <--- QUAN TRỌNG: Kéo điểm check về gần tâm (0.1m) để không bị kẹt ảo
+  forward_point_distance: 0.1
   
   stop_time_buffer: 0.2
   scaling_speed: 0.25

@@ -1,13 +1,11 @@
 # --- CẤU HÌNH ROBOT ---
-# Robot bạn rộng ~0.5m (bán kính 0.25m).
-# Để radius 0.3m là an toàn (dư 5cm mỗi bên).
 robot_radius: 0.3
 
 # --- CẤU HÌNH CHUNG ---
 map_type: costmap
 
 # THAM SỐ QUAN TRỌNG TỪ HƯỚNG DẪN:
-# Cho phép độ trễ của TF. Trong Gazebo nên để cao chút (0.5s) để tránh lỗi warning liên tục.
+# Cho phép độ trễ của TF.
 transform_tolerance: 0.5 
 
 # --- CẤU HÌNH CHƯỚNG NGẠI VẬT ---
@@ -26,8 +24,6 @@ obstacle_layer:
     topic: /scan,
     marking: true,
     clearing: true,
-    # THÊM MỚI THEO HƯỚNG DẪN:
-    # Lidar 20Hz (0.05s), ta cho phép trễ tối đa 0.4s (gấp đôi hoặc hơn tolerance)
     expected_update_rate: 0.4, 
     # Cần thêm inf_is_valid = true để lidar không bị lỗi khi gặp khoảng cách vô cực
     inf_is_valid: true 
