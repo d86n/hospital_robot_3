@@ -5,7 +5,7 @@
   <joint name="base_joint" type="fixed">
     <parent link="base_footprint"/>
     <child link="body"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 -1.5708"/>
   </joint>
 
   <link name="body">
@@ -138,7 +138,7 @@
   <joint name="lidar_joint" type="fixed">
       <parent link="body"/>
       <child link="lidar_link"/>
-      <origin xyz="0 0 0.15" rpy="0 0 3.14159"/>
+      <origin xyz="0 0 0.15" rpy="0 0 1.5708"/>
   </joint>
 
   <gazebo reference="lidar_link">
