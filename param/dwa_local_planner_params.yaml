@@ -9,28 +9,32 @@ DWAPlannerROS:
   max_vel_trans: 0.5
   min_vel_trans: 0.1 
 
-  max_vel_theta: 1.0  # Giảm max xoay xuống 1.0 để robot xoay từ tốn
-  min_vel_theta: 0.1  # Giam min xoay xuong 0.1 de robot co the xoay cham rai khi tinh chinh
+  max_vel_theta: 2.0  # Tang toc do xoay toi da
+  min_vel_theta: 0.1  # Giam min xoay xuong de robot co the xoay cham rai khi tinh chinh
 
   acc_lim_x: 1.5
+<<<<<<< Updated upstream
   acc_lim_theta: 1.0  # Giam gia toc xoay de tranh vot lo da (overshoot)
+=======
+  acc_lim_theta: 2.0  # Giam gia toc xoay xuong mot chut de on dinh hon
+>>>>>>> Stashed changes
   acc_lim_y: 0.0
 
 # 2. Goal Tolerance
   xy_goal_tolerance: 0.15
-  yaw_goal_tolerance: 0.2
+  yaw_goal_tolerance: 0.3 # Tang dung sai goc len de robot de chap nhan dich den hon
   latch_xy_goal_tolerance: true
 
 # 3. Forward Simulation - NHÌN XA HƠN
-  sim_time: 2.0       # <--- Tăng lên 2.0s để robot tính được đường thoát dài hơn
+  sim_time: 1.5       # Giam xuong 1.5s de robot phan ung nhanh hon tai dich
   vx_samples: 20      
   vy_samples: 0       
-  vth_samples: 40     # Lấy nhiều mẫu góc quay để tìm khe hở
+  vth_samples: 60     # Tang mau goc quay de tim duoc van toc xoay tot nhat
   
 # 4. Trajectory Scoring - GIẢM SỢ VẬT CẢN
   path_distance_bias: 32.0 
-  goal_distance_bias: 24.0 
-  occdist_scale: 0.01       # <--- Giảm từ 0.05 xuống 0.01 để robot dám đi sát tường hơn
+  goal_distance_bias: 36.0 # Tang bias goal len cao hon path de robot uu tien ve dich
+  occdist_scale: 0.02       # Tang nhe de tranh va cham tot hon
   
   forward_point_distance: 0.1 # <--- QUAN TRỌNG: Kéo điểm check về gần tâm (0.1m) để không bị kẹt ảo
   
