@@ -41,13 +41,13 @@
   </node>
 
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
-    <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS"/>
     
     <rosparam file="$(find hospital_robot)/param/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find hospital_robot)/param/costmap_common_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find hospital_robot)/param/local_costmap_params.yaml" command="load" />
     <rosparam file="$(find hospital_robot)/param/global_costmap_params.yaml" command="load" />
-    <rosparam file="$(find hospital_robot)/param/base_local_planner_params.yaml" command="load" />
+    <rosparam file="$(find hospital_robot)/param/dwa_local_planner_params.yaml" command="load" />
   </node>
 
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find hospital_robot)/config/config.rviz"/>

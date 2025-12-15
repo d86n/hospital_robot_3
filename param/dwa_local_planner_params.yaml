@@ -1,0 +1,46 @@
+DWAPlannerROS:
+# --- 1. Cấu hình Robot (Robot Configuration) ---
+  max_vel_x: 0.5
+  min_vel_x: 0.0  # DWA Planner nên để min_vel_x = 0 để nó không cố đi lùi khi kẹt
+  
+  max_vel_y: 0.0  # Robot vi sai (2 bánh) -> vận tốc y = 0
+  min_vel_y: 0.0
+
+  # Vận tốc tổng hợp (Translational Velocity)
+  max_vel_trans: 0.5
+  min_vel_trans: 0.1 
+
+  # Vận tốc xoay (Rotational Velocity)
+  max_vel_theta: 1.5
+  min_vel_theta: 0.2 # DWA dùng số dương cho vận tốc xoay tối thiểu (absolute value)
+
+  acc_lim_x: 1.0
+  acc_lim_y: 0.0
+  acc_lim_theta: 2.0 
+
+# --- 2. Goal Tolerance ---
+  xy_goal_tolerance: 0.10
+  yaw_goal_tolerance: 0.1
+  latch_xy_goal_tolerance: true
+
+# --- 3. Forward Simulation (Mô phỏng tương lai) ---
+  sim_time: 1.5       # 1.5s là con số vàng
+  vx_samples: 15      # Tăng mẫu lên để đường đi mịn (hướng dẫn khuyên 8-15)
+  vy_samples: 0       # Robot 2 bánh không cần mẫu Y
+  vth_samples: 40     # Lấy mẫu góc quay dày hơn để tìm hướng tốt nhất
+  
+# --- 4. Trajectory Scoring (Chấm điểm đường đi) ---
+  # DWA dùng tên tham số khác với Base Local Planner:
+  path_distance_bias: 32.0  # Ưu tiên bám theo đường Global Plan (default: 32.0)
+  goal_distance_bias: 24.0  # Ưu tiên đến đích (default: 24.0)
+  occdist_scale: 0.05       # Né vật cản (default: 0.01)
+  
+  forward_point_distance: 0.325 # Khoảng cách điểm đặt trước mũi robot để check đường
+  
+  # Cấu hình chống dao động
+  oscillation_reset_dist: 0.05 
+
+# --- 5. Debug ---
+  publish_traj_pc : true
+  publish_cost_grid_pc: true
+  global_frame_id: odom
